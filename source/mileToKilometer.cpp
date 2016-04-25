@@ -4,7 +4,7 @@ using namespace std;
 double mile;
 double kilometer;
 
-double mileToKilometer(double)
+double mileToKilometer(double mile)
 {
 	kilometer = mile*1.60934;
 	return mile;	
