@@ -17,6 +17,7 @@ int gcd(int a, int b)
 
 double mileToKilometer(double mile)
 {
+	double kilometer;
 	cout<<"Bitte geben sie die Distanz in Meilen ein:"<<endl;
 	cin>>mile;
 	kilometer = mile*1.60934;
