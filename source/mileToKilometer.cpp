@@ -4,12 +4,18 @@ using namespace std;
 double mile;
 double kilometer;
 
+double mileToKilometer(double)
+{
+	kilometer = mile*1.60934;
+	return mile;	
+}
+
+
 int main()
 {
 	cout<<"Bitte geben sie die Distanz in Meilen ein:"<<endl;
 	cin>>mile;
-	cout<<"Vielen Dank! Ihre Eingabe wird verarbeitet..."<<endl;
-	kilometer = mile*1.60934;
+	mileToKilometer(mile);
 	cout<<mile<<" Meilen sind umgerechnet "<<kilometer<<" Kilometer."<<endl;
-	return 0;
+
 }
