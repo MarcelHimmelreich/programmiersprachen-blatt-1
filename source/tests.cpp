@@ -46,7 +46,7 @@ float ZylinderVol(float r, float h)
 float frac(float x)
 {
     int y = (int)x;
-    int z = y-x;
+    float z = y-x;
     return z;
 }
 
