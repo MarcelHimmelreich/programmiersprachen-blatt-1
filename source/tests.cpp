@@ -7,15 +7,19 @@ int gcd(int a, int b)
 {
 	if (b == 0)
 	{
-	return a;
+		return a;
 	}
 	else if(a==0)
 	{
 		return b;
 	}
-	else
+	else if(a<b)
 	{
 		return gcd(b, a%b);
+	}
+	else
+	{
+		return gcd(b, a%b);	
 	}
 }
 
