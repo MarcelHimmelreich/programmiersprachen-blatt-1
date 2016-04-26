@@ -5,22 +5,23 @@
 
 int gcd(int a, int b)
 {
-	if (b == 0)
-	{
-		return a;
-	}
-	else if(a==0)
+	if (a == 0)
 	{
 		return b;
 	}
-	else if(a<b)
+	while(a != 0)
 	{
-		return gcd(b, a%b);
+	    	if (a > b)
+    		{
+    			a = a - b;               
+    		}
+        	else
+    		{
+    			b = b - a;               
+    		}	
+		
 	}
-	else
-	{
-		return gcd(b, a%b);	
-	}
+	return a;
 }
 
 double mileToKilometer(double mile)
@@ -46,7 +47,7 @@ float ZylinderVol(float r, float h)
 float frac(float x)
 {
     int y = (int)x;
-    int z = y-x;
+    float z = y-x;
     return z;
 }
 
