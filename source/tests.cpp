@@ -7,7 +7,7 @@ int gcd(int a, int b)
 {
 	if (b == 0)
 	{
-	return a
+	return a;
 	}
 	else if(a==0)
 	{
@@ -28,13 +28,13 @@ double mileToKilometer(double mile)
 
 float ZylinderOberfl(float r, float h)
 {
-    float oberfl = (2*M_PI*r^2)+(2*M_PI*r*h);
+    float oberfl = (2*M_PI*r*r)+(2*M_PI*r*h);
     return oberfl;
 }
 
 float ZylinderVol(float r, float h)
 {
-    float vol = M_PI*(r^2)*h
+    float vol = M_PI*(r*r)*h
     return vol;
 }
 
@@ -60,7 +60,7 @@ int checksum(int Zahl)
 int sumMultiples()
 {
     int sum = 0;
-	for (int i = 0; i < 1000; i++)
+	for (int i = 0; i <= 1000; i++)
 	{
 		if (i % 3 == 0)
 		{
@@ -91,7 +91,7 @@ TEST_CASE("describe_sumMultiples ", "[sumMultiples]")
 
 TEST_CASE("describe_checksum ", "[checksum]")
 {
-	REQUIRE(chekcsum(15) == 6);
+	REQUIRE(checksum(15) == 6);
 	REQUIRE(checksum(25) == 7);
 	REQUIRE(checksum(35) == 8);
 }
